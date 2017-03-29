@@ -364,7 +364,7 @@ header a.title_a.a_right.rule {
   text-align: center;
   position: relative;
   color: #2F323A;
-  display: none;
+  display: block;
 }
 
 .alert_con .alert_con_t span {
@@ -404,7 +404,7 @@ header a.title_a.a_right.rule {
   cursor: pointer;
   font-weight: normal;
   display: inline-block;
-  background: #FF8100;
+  background: #ff4747;
   border-radius: 0.08rem;
   transtion: all 1s;
   color: white;
@@ -415,7 +415,7 @@ header a.title_a.a_right.rule {
 }
 
 .alert_con .alert_con_close:hover {
-  background: orange;
+  background: #ff4747;
 }
 
 .alert_con .alert_con_foot {

@@ -37,7 +37,7 @@ $(document).ready(function () {
     });
     //点击拆--动画
     $('.js_chai_button').on('click', function () {
-        // $(this).addClass('dong');
+        //$(this).addClass('dong');
         $(this).hide();
         $('.js_img_button').addClass('dong');
         //执行抽红包ajax——todo

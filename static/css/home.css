@@ -364,7 +364,7 @@ header a.title_a.a_right.rule {
   text-align: center;
   position: relative;
   color: #2F323A;
-  display: none;
+  display: block;
 }
 
 .alert_con .alert_con_t span {
@@ -404,7 +404,7 @@ header a.title_a.a_right.rule {
   cursor: pointer;
   font-weight: normal;
   display: inline-block;
-  background: #FF8100;
+  background: #ff4747;
   border-radius: 0.08rem;
   transtion: all 1s;
   color: white;
@@ -415,7 +415,7 @@ header a.title_a.a_right.rule {
 }
 
 .alert_con .alert_con_close:hover {
-  background: orange;
+  background: #ff4747;
 }
 
 .alert_con .alert_con_foot {
@@ -1319,10 +1319,10 @@ section.tips p i.i_sad {
   height: 2.666667rem;
   border-radius: 100%;
   margin: 1.6rem auto 0;
-  text-align: center;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   overflow: hidden;
+  text-align: center;
 }
 
 .qiang_page .chai span.chai_button {
@@ -1347,18 +1347,12 @@ section.tips p i.i_sad {
 .qiang_page .chai span.img_button img {
   width: auto;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .qiang_page .chai span.img_button.dong {
   display: block;
-}
-
-.qiang_page .chai span.img_button.dong img {
-  -webkit-animation: fanzhuan 2s linear infinite normal;
-  animation: fanzhuan 2s linear infinite normal;
+  -webkit-animation: fanzhuan 2s ease infinite normal;
+  animation: fanzhuan 2s ease infinite normal;
 }
 
 .qiang_page .chai a.scan {
@@ -1378,8 +1372,8 @@ section.tips p i.i_sad {
   }
 
   100% {
-    -webkit-transform: rotateY(360deg);
-    transform: rotateY(360deg);
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
   }
 }
 
@@ -1390,8 +1384,8 @@ section.tips p i.i_sad {
   }
 
   100% {
-    -webkit-transform: rotateY(360deg);
-    transform: rotateY(360deg);
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
   }
 }
 

@@ -501,6 +501,7 @@ section.tips {
             text-align: center;
             transform-style: preserve-3d;
             overflow: hidden;
+            text-align: center;
             &.chai_button {
                 background: #f59b20;
                 color: white;
@@ -515,25 +516,22 @@ section.tips {
                 display: none;
                 box-shadow: none;
                 position: relative;
+                // background: url('../img/coin.png') center center no-repeat;
+                // background-size: auto 100%;
                 img {
                     width: auto;
                     height: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
+                }
+                &.dong {
+                    display: block;
+                    animation: fanzhuan 2s ease infinite normal;
                 }
                 // &.dong {
                 //     display: block;
-                //     // animation: fanzhuan 2s linear infinite normal;
-                //     animation: fanzhuan 2s infinite normal;
+                //     img {
+                //         animation: fanzhuan 2s linear infinite normal;
+                //     }
                 // }
-                &.dong {
-                    display: block;
-                    img {
-                        // animation: fanzhuan 2s linear infinite normal;
-                        animation: fanzhuan 2s linear infinite normal;
-                    }
-                }
             }
         }
         // img.img_button_img {
@@ -566,23 +564,19 @@ section.tips {
 
 @keyframes fanzhuan {
     // from {
-    //     transform: rotateY(0deg);
+    //     transform: rotateY(-0deg);
     // }
     // to {
-    //     transform: rotateY(360deg);
+    //     transform: rotateY(-180deg);
     // }
     0% {
         transform: rotate3d(0, 1, 0, 0deg);
     }
-    // 33% {
-    //     transform: rotate3d(0, 1, 0, 120deg);
-    // }
-    // 66% {
-    //     transform: rotate3d(0, 1, 0, 240deg);
+    // 90% {
+    //     transform: rotate3d(0, 1, 0, -180deg);
     // }
     100% {
-        // transform: rotate3d(0, 1, 0, 360deg);
-        transform: rotateY(360deg);
+        transform: rotateY(-180deg);
     }
 }
 
