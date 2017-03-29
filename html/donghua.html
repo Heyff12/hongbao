@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>疯抢红包</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script>
+    <style type="text/css">
+    .qiang_page .chai span {
+        display: block;
+        box-shadow: 0.026667rem 0.026667rem 0.08rem #140908;
+        width: 2.666667rem;
+        height: 2.666667rem;
+        border-radius: 100%;
+        margin: 1.6rem auto 0;
+        text-align: center;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        overflow: hidden;
+    }
+    
+    .qiang_page .chai span.img_button {
+        box-shadow: none;
+        position: relative;
+    }
+    
+    .qiang_page .chai span.img_button img {
+        width: auto;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .qiang_page .chai span.img_button.dong {
+        display: block;
+    }
+    
+    .qiang_page .chai span.img_button.dong img {
+        -webkit-animation: fanzhuan 2s linear infinite normal;
+        animation: fanzhuan 2s linear infinite normal;
+    }
+    
+    @-webkit-keyframes fanzhuan {
+        0% {
+            -webkit-transform: rotate3d(0, 1, 0, 0deg);
+            transform: rotate3d(0, 1, 0, 0deg);
+        }
+        100% {
+            -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+        }
+    }
+    
+    @keyframes fanzhuan {
+        0% {
+            -webkit-transform: rotate3d(0, 1, 0, 0deg);
+            transform: rotate3d(0, 1, 0, 0deg);
+        }
+        100% {
+            -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div id="wap" class="qiang_page">
+        <div class="chai">
+            <span class="img_button js_img_button dong"><img src="./coin.png"></span>
+        </div>
+    </div>
+</body>
+
+</html>

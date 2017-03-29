@@ -1,0 +1,371 @@
+@import "./common/common";
+
+/* ==================会员中心-首页============================================================ */
+
+section.tips {
+    width: 100%;
+    background: url('@{images}/topbg.png') bottom left no-repeat;
+    background-size: 100% auto;
+    position: relative;
+    top: 0;
+    z-index: 2;
+    line-height: 20px;
+    padding: 16px 0 36px;
+    color: white;
+    font-size: 15px;
+    &.nothing {
+        padding: 0;
+        height: 43px;
+        margin-top: -13px;
+        position: relative;
+        z-index: 0;
+    }
+}
+
+.hisroryD {
+    width: 100%;
+    padding: 0 0 10px;
+    margin: 20px auto 0;
+    ul {
+        width: 100%;
+        line-height: 41px;
+        border-radius: 5px;
+        font-size: 14px;
+        //border-top: 1px solid @border_color;
+        li {
+            border-top: 1px solid @border_color;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0px 20px;
+            a {
+                width: 100%;
+                display: inline-block;
+            }
+            span {
+                display: inline-block;
+                &.money {
+                    margin-left: 30px;
+                    color: @red;
+                    &.green {
+                        color: @green;
+                    }
+                }
+            }
+            &:after {
+                content: '';
+                clear: both;
+                height: 0px;
+                line-height: 0px;
+                font-size: 0px;
+            }
+        }
+    }
+}
+
+.float_button {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    a {
+        width: 100%;
+        display: inline-block;
+    }
+    span {
+        width: 100%;
+        display: inline-block;
+        background: @red;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 4px;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+    }
+}
+
+.member_index {
+    dl.single_top {
+        background: @red;
+        width: 100%;
+        color: white;
+        font-size: 13px;
+        padding-top: 10px;
+        dt {
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            border: 2px solid white;
+            overflow: hidden;
+            margin: 0 auto 10px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        dd {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+    ul.ul_name {
+        width: 100%;
+        font-size: 16px;
+        line-height: 70px;
+        li {
+            float: left;
+            width: 50%;
+            text-align: center;
+            box-sizing: border-box;
+            span.grey {
+                font-size: 13px;
+            }
+            &:nth-child(2) {
+                text-align: left;
+                padding-left: 15px;
+            }
+        }
+    }
+    ul.ul_menu {
+        width: 100%;
+        border-top: 1px solid @border_color;
+        li {
+            width: 100%;
+            padding: 0 15px;
+            box-sizing: border-box;
+            border-bottom: 1px solid @border_color;
+            height: 45px;
+            line-height: 45px;
+            dl {
+                width: 100%;
+                dt {
+                    width: 30%;
+                    float: left;
+                }
+                dd {
+                    width: 70%;
+                    float: left;
+                    text-align: right;
+                    background: url('../img/ic_next.png') center right no-repeat;
+                    padding-right: 25px;
+                    box-sizing: border-box;
+                    background-size: 10px auto;
+                    font-size: 12px;
+                    &.no_arrow {
+                        background: none;
+                    }
+                    a {
+                        width: 100%;
+                        display: inline-block;
+                        padding-right: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .quit {
+        width: 100%;
+        border-top: 1px solid @border_color;
+        border-bottom: 1px solid @border_color;
+        margin-top: 86px;
+        text-align: center;
+        height: 45px;
+        line-height: 45px;
+        font-size: 20px;
+    }
+    .note {
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+        margin-top: 30px;
+        span {
+            padding: 0 5px;
+        }
+    }
+}
+
+
+/* ==================中奖明细============================================================ */
+
+.member_zhongde {}
+
+
+/* ==================提现============================================================ */
+
+p.title {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    line-height: 45px;
+    margin: 0px auto 0px;
+    background: #f2f2f2;
+    font-size: 14px;
+}
+
+.bank {
+    border-top: 1px solid @border_color;
+    border-bottom: 1px solid @border_color;
+    width: 100%;
+    margin-bottom: 45px;
+    ul.detail {
+        width: 100%;
+        li {
+            width: 100%;
+            padding: 0 15px;
+            box-sizing: border-box;
+            border-top: 0px solid @border_color;
+            height: 45px;
+            line-height: 45px;
+            &:nth-child(1) {
+                border: 0;
+            }
+            dl {
+                width: 100%;
+                dt {
+                    width: 30%;
+                    float: left;
+                }
+                dd {
+                    width: 70%;
+                    float: left;
+                    text-align: left;
+                    box-sizing: border-box;
+                    input {
+                        width: 100%;
+                        height: 35px;
+                        line-height: 35px;
+                        border: 1px solid @border_color;
+                        padding: 0 5px;
+                        box-sizing: border-box;
+                        border-radius: 3px;
+                    }
+                    select {
+                        width: 31%;
+                        display: inline-block;
+                        height: 35px;
+                        line-height: 35px;
+                        margin-right: 2%;
+                        border: 1px solid @border_color;
+                        padding: 0 5px;
+                        box-sizing: border-box;
+                        border-radius: 3px;
+                        &:nth-child(3) {
+                            margin-right: 0;
+                        }
+                    }
+                    &:after{
+                        content: '';
+                        clear: both;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.member_crash {
+    .now_money {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        line-height: 40px;
+        span {
+            font-size: 18px;
+            padding: 0 5px;
+        }
+    }
+    .input {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        margin: 8px auto;
+        input {
+            width: 100%;
+            height: 35px;
+            line-height: 35px;
+            border: 1px solid @border_color;
+            padding: 0 5px;
+            box-sizing: border-box;
+            border-radius: 3px;
+        }
+    }
+}
+
+
+/* ==================我的订单============================================================ */
+
+.member_order {}
+
+section.container_orderlist {
+    background-color: #f4f4f4;
+    margin-top: 6px;
+    .order_list_d {
+        width: 100%;
+        border-top: 1px solid @border_color;
+        border-bottom: 1px solid @border_color;
+        background-color: white;
+        font-size: 14px;
+        margin: 10px auto;
+        dl {
+            padding: 6px 15px;
+            box-sizing: border-box;
+            line-height: 26px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            &:after {
+                content: '';
+                clear: both;
+            }
+            dt {
+                width: 80px;
+                height: 80px;
+                float: left;
+                img {
+                    width: 80px;
+                    height: auto;
+                }
+            }
+            dd {
+                width: 75%;
+                float: right;
+                overflow: hidden;
+                a {
+                    color: #333;
+                }
+            }
+            span.del_order {
+                width: 90px;
+                height: 36px;
+                text-align: center;
+                line-height: 36px;
+                margin-top: 0.1rem;
+                color: white;
+                background-color: @red;
+                display: inline-block;
+                position: absolute;
+                right: 15px;
+                top: 22px;
+                border-radius: 5px;
+                &.none {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+/* ==================收货地址============================================================ */
+
+.member_address {
+    section.container_orderlist {
+        .order_list_d {
+            margin-bottom: 0;
+        }
+    }
+}

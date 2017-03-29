@@ -1,0 +1,814 @@
+@import "./common/common";
+
+/* ==================抢红包-首页============================================================ */
+
+body.bg_body {
+    background: @bg_grey;
+}
+
+section.tips {
+    width: 100%;
+    background: url('@{images}/topbg.png') bottom left no-repeat;
+    background-size: 100% auto;
+    position: relative;
+    top: 0;
+    z-index: 2;
+    line-height: 20px;
+    padding: 16px 0 36px;
+    color: white;
+    font-size: 15px;
+    &.nothing {
+        padding: 0;
+        height: 43px;
+        margin-top: -12px;
+    }
+    p {
+        text-align: center;
+        i {
+            position: relative;
+            top: 5px;
+            margin-right: 5px;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            &.i_smile {
+                background: url('@{images}/smile.png') center left no-repeat;
+                background-size: 20px auto;
+            }
+            &.i_sad {
+                background: url('@{images}/sad.png') center left no-repeat;
+                background-size: 20px auto;
+            }
+        }
+    }
+}
+
+.countdown {
+    color: @yellow;
+    font-size: 15px;
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 37px;
+    margin-bottom: 285px;
+    span {
+        display: inline-block;
+        width: 39px;
+        height: 39px;
+        line-height: 39px;
+        background: url('@{images}/timebgw.png') center center no-repeat;
+        background-size: 100% auto;
+        color: @red;
+        font-size: 24px;
+        margin: 0 6px;
+        font-family: impact;
+    }
+    &.qiang {
+        color: @red;
+        margin: 16px auto 20px;
+        span {
+            background: url('@{images}/timebg.png') center center no-repeat;
+            background-size: 100% auto;
+            color: white;
+        }
+    }
+}
+
+.zhong_name {
+    width: 100%;
+    padding: 0;
+    ul {
+        width: 100%;
+        line-height: 41px;
+        border-radius: 5px;
+        font-size: 14px;
+        border-top: 1px solid @border_color;
+        li {
+            border-bottom: 1px solid @border_color;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0px 20px;
+            span {
+                display: inline-block;
+                &.img {
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 100%;
+                    overflow: hidden;
+                    text-align: center;
+                    line-height: 22px;
+                    margin-right: 10px;
+                    vertical-align: middle;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                &.tel {
+                    margin-left: 80px;
+                }
+            }
+            &:after {
+                content: '';
+                clear: both;
+                height: 0px;
+                line-height: 0px;
+                font-size: 0px;
+            }
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                //line-height: 30px;
+                span {
+                    &.img {
+                        top: 2px;
+                        width: 28px;
+                        height: 38px;
+                    }
+                }
+            }
+        }
+    }
+    &.hei_fix {
+        max-height: 411px;
+        overflow-y: auto;
+    }
+    &.sigle {
+        ul {
+            border: 0;
+            margin-top: 20px;
+            li {
+                border-top: 1px solid @border_color;
+                border-bottom: 0;
+            }
+        }
+    }
+}
+
+.hisroryD {
+    width: 100%;
+    padding: 0 0 10px;
+    margin: 20px auto 0;
+    ul {
+        width: 100%;
+        line-height: 41px;
+        border-radius: 5px;
+        font-size: 14px;
+        //border-top: 1px solid @border_color;
+        li {
+            border-top: 1px solid @border_color;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0px 20px;
+            a {
+                width: 100%;
+                display: inline-block;
+            }
+            span {
+                display: inline-block;
+                &.tel {
+                    margin-left: 80px;
+                    color: @red;
+                }
+            }
+            &:after {
+                content: '';
+                clear: both;
+                height: 0px;
+                line-height: 0px;
+                font-size: 0px;
+            }
+        }
+    }
+    &.writein {
+        ul {
+            li {
+                span {
+                    &.write {
+                        margin: 0;
+                        color: @red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.float_button {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    a {
+        width: 100%;
+        display: inline-block;
+    }
+    span {
+        width: 100%;
+        display: inline-block;
+        background: @red;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 4px;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+    }
+}
+
+.input {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 8px auto;
+    input {
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        border: 1px solid @border_color;
+        padding: 0 5px;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+}
+
+.index_page {
+    section.body_pic {
+        width: 100%;
+        margin-top: -76px;
+        padding: 95px 0 15px;
+        background: url('@{images}/homebg.jpg') bottom left no-repeat @red;
+        background-size: 100% auto;
+        position: relative;
+        p.pic_button {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 25px;
+            a {
+                width: 189px;
+                height: 55px;
+                background: url('@{images}/homebutton.png') center center no-repeat;
+                background-size: 100% auto;
+                display: inline-block;
+                margin: 0 auto;
+            }
+        }
+        .zhong_name {
+            width: 100%;
+            padding: 0 10px 0px;
+            box-sizing: border-box;
+            height: 102px;
+            overflow: hidden;
+            .zhong_namein {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 6px 20px;
+                line-height: 30px;
+                background: #ffaaaa;
+                border: 1px dashed @yellow;
+                border-radius: 5px;
+                font-size: 14px;
+                height: 102px;
+                overflow: hidden;
+                ul {
+                    li {
+                        span {
+                            display: inline-block;
+                            &.img {
+                                width: 22px;
+                                height: 22px;
+                                border-radius: 100%;
+                                overflow: hidden;
+                                text-align: center;
+                                line-height: 22px;
+                                vertical-align: middle;
+                                margin-right: 10px;
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                            &.tel {
+                                margin-left: 50px;
+                            }
+                        }
+                        &:after {
+                            content: '';
+                            clear: both;
+                            height: 0px;
+                            line-height: 0px;
+                            font-size: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .down {
+            width: 50px;
+            height: 50px;
+            margin: 5px auto;
+            background: url('@{images}/down.png') center center no-repeat;
+            background-size: 35px auto;
+            position: absolute;
+            top: 460px;
+            margin-left: -25px;
+            left: 50%;
+            animation: big_small 2s ease infinite alternate;
+        }
+    }
+    section.product {
+        width: 100%;
+        padding: 0 10px 15px;
+        box-sizing: border-box;
+        p.title {
+            width: 100%;
+            text-align: center;
+            font-size: 15px;
+            position: relative;
+            height: 20px;
+            line-height: 20px;
+            margin: 10px auto;
+            &:before {
+                content: '';
+                width: 4px;
+                height: 4px;
+                background: @red;
+                border-radius: 100%;
+                position: absolute;
+                left: 0;
+                top: 8px;
+            }
+            &:after {
+                content: '';
+                width: 4px;
+                height: 4px;
+                background: @red;
+                border-radius: 100%;
+                position: absolute;
+                right: 0;
+                top: 8px;
+            }
+            span {
+                display: inline-block;
+                &.line {
+                    width: 100%;
+                    height: 1px;
+                    background: @red;
+                    left: 0;
+                    top: 9px;
+                    position: absolute;
+                    z-index: 1;
+                }
+                &.word {
+                    background: white;
+                    height: 20px;
+                    padding: 0 8px;
+                    position: relative;
+                    z-index: 2;
+                }
+            }
+        }
+        ul {
+            li {
+                width: 48%;
+                float: left;
+                margin-bottom: 10px;
+                font-size: 14px;
+                &:nth-child(2n-1) {
+                    float: right;
+                }
+                span.img {
+                    display: inline-block;
+                    width: 100%;
+                    border: 1px solid @border_color;
+                    text-align: center;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        height: auto
+                    }
+                }
+                p {
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes big_small {
+    0% {
+        transform: scale(0.7, 0.7);
+    }
+    50% {
+        transform: scale(0.9, 0.9);
+    }
+    100% {
+        transform: scale(1.1, 1.1);
+    }
+}
+
+
+/* ==================疯抢红包============================================================ */
+
+.qiang_page {
+    a.scan {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        display: block;
+        line-height: 40px;
+    }
+    span.qiang_button {
+        display: block;
+        width: 210px;
+        background: @red;
+        color: white;
+        height: 45px;
+        line-height: 45px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 20px;
+    }
+    .chai {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 12;
+        padding: 0.1rem 0;
+        width: 300px;
+        height: 500px;
+        margin-top: -250px;
+        margin-left: -150px;
+        background: url('@{images}/qiangbg.jpg') top left no-repeat #8c2520;
+        background-size: 100% auto;
+        display: none;
+        border-radius: @border_radius;
+        color: #f0d8cc;
+        overflow: hidden;
+        perspective: 1000;
+        transform-style: preserve-3d;
+        span.close {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            display: block;
+            font-size: 24px;
+            position: absolute;
+            top: 16px;
+            right: 20px;
+            color: #140908;
+            margin: 0;
+        }
+        dl {
+            width: 100%;
+            text-align: center;
+            dt {
+                width: 65px;
+                height: 65px;
+                border-radius: 100%;
+                overflow: hidden;
+                margin: 45px auto 5px;
+                img {
+                    width: 65px;
+                    height: auto;
+                }
+            }
+            dd {
+                line-height: 26px;
+                &.name {
+                    font-size: 20px;
+                    margin: 18px 0 0;
+                }
+                &.word {
+                    font-size: 12px;
+                }
+                &.merry {
+                    font-size: 20px;
+                    line-height: 50px;
+                    margin: 30px 0;
+                }
+            }
+        }
+        span {
+            display: block;
+            box-shadow: 1px 1px 3px #140908;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            margin: 60px auto 0;
+            text-align: center;
+            transform-style: preserve-3d;
+            overflow: hidden;
+            &.chai_button {
+                background: #f59b20;
+                color: white;
+                line-height: 100px;
+                font-size: 20px;
+                font-weight: bold;
+                &.dong {
+                    animation: fanzhuan 2s linear infinite normal;
+                }
+            }
+            &.img_button {
+                display: none;
+                box-shadow: none;
+                position: relative;
+                img {
+                    width: auto;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                // &.dong {
+                //     display: block;
+                //     // animation: fanzhuan 2s linear infinite normal;
+                //     animation: fanzhuan 2s infinite normal;
+                // }
+                &.dong {
+                    display: block;
+                    img {
+                        // animation: fanzhuan 2s linear infinite normal;
+                        animation: fanzhuan 2s linear infinite normal;
+                    }
+                }
+            }
+        }
+        // img.img_button_img {
+        //     display: block;
+        //     width: 100px;
+        //     height: 100px;
+        //     border-radius: 100%;
+        //     margin: 60px auto 0;
+        //     text-align: center;
+        //     background: url('../img/coin.png') center center no-repeat;
+        //     background-size: auto 100%;
+        //     display: none;
+        //     &.dong {
+        //         display: block;
+        //         //animation: fanzhuan 2s linear 0s 2 normal running;
+        //         animation: fanzhuan 2s linear infinite normal;
+        //     }
+        // }
+        a.scan {
+            display: block;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #f0d8cc;
+            margin-top: 140px;
+        }
+    }
+}
+
+@keyframes fanzhuan {
+    // from {
+    //     transform: rotateY(0deg);
+    // }
+    // to {
+    //     transform: rotateY(360deg);
+    // }
+    0% {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+    // 33% {
+    //     transform: rotate3d(0, 1, 0, 120deg);
+    // }
+    // 66% {
+    //     transform: rotate3d(0, 1, 0, 240deg);
+    // }
+    100% {
+        // transform: rotate3d(0, 1, 0, 360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+
+/* ==================红包结果页============================================================ */
+
+.qiangdetail_page {
+    section.tips_detail {
+        width: 100%;
+        background: url('@{images}/qiangbg_s.jpg') bottom left no-repeat;
+        background-size: 100% auto;
+        position: relative;
+        top: -45px;
+        z-index: 2;
+        line-height: 20px;
+        height: 160px;
+    }
+    dl.dl_detail {
+        width: 100%;
+        text-align: center;
+        margin: -100px auto 0;
+        position: relative;
+        z-index: 3;
+        dt {
+            width: 115px;
+            height: 115px;
+            border-radius: 100%;
+            overflow: hidden;
+            margin: 0px auto 5px;
+            img {
+                width: 115px;
+                height: auto;
+            }
+        }
+        dd {
+            line-height: 26px;
+            &.name {
+                font-size: 20px;
+                margin: 18px 0 0;
+            }
+            &.word {
+                font-size: 12px;
+            }
+            &.merry {
+                font-size: 34px;
+                line-height: 30px;
+                margin: 30px 0 0px;
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .scan {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        line-height: 45px;
+        background: #f1f1f1;
+        height: 45px;
+        margin-top: 50px;
+    }
+}
+
+
+/* ==================红包历史============================================================ */
+
+.history_page {}
+
+
+/* ==================红包规则============================================================ */
+
+.rule_page {
+    section.section_index {
+        width: 100%;
+        padding: 0.2rem @padding;
+        box-sizing: border-box;
+        background: white;
+        margin: 15px 0;
+        font-size: @font_size;
+        background: white;
+        p {
+            width: 100%;
+            border-bottom: dashed @border_color 1px;
+            /*no*/
+            line-height: 1rem;
+            text-align: center;
+            font-weight: bold;
+        }
+        ul {
+            width: 100%;
+            line-height: 0.7rem;
+            padding: .1rem 0 .1rem 0;
+            box-sizing: border-box;
+            font-size: 14px;
+            li {
+                width: 100%;
+                span.num {
+                    display: inline-block;
+                    width: 0.4rem;
+                    height: 0.4rem;
+                    line-height: 0.4rem;
+                    text-align: center;
+                    background: @orange;
+                    color: white;
+                    border-radius: 100%;
+                    margin-right: 5px;
+                    font-size: .36rem;
+                }
+            }
+        }
+    }
+}
+
+
+/* ==================商品详情============================================================ */
+
+.shop_page {}
+
+section.title_dot {
+    width: 100%;
+    padding: 8px 15px;
+    box-sizing: border-box;
+    background: #f4f4f4;
+    p.title {
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        position: relative;
+        height: 20px;
+        line-height: 20px;
+        margin: 10px auto;
+        &:before {
+            content: '';
+            width: 4px;
+            height: 4px;
+            background: @red;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            top: 8px;
+        }
+        &:after {
+            content: '';
+            width: 4px;
+            height: 4px;
+            background: @red;
+            border-radius: 100%;
+            position: absolute;
+            right: 0;
+            top: 8px;
+        }
+        span {
+            display: inline-block;
+            &.line {
+                width: 100%;
+                height: 1px;
+                background: @red;
+                left: 0;
+                top: 9px;
+                position: absolute;
+                z-index: 1;
+            }
+            &.word {
+                background: #f4f4f4;
+                height: 20px;
+                padding: 0 8px;
+                position: relative;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+section.container_detail {
+    position: relative;
+    padding-bottom: 1.6rem;
+    width: 100%;
+    .detail_img {
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+        margin-top: 0;
+        position: relative;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    h2 {
+        width: 100%;
+        margin: 6px auto;
+        line-height: 36px;
+        font-size: 16px;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    ul.detail_ul {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        margin: 6px auto 15px;
+        border-top: 1px solid #d7d7d7;
+        border-bottom: 1px solid #d7d7d7;
+        line-height: 30px;
+        font-size: 14px;
+        li {
+            span.grey {
+                padding-right: 8px;
+            }
+            i {
+                font-style: normal;
+            }
+        }
+    }
+    .detail_detail {
+        width: 100%;
+        line-height: 30px;
+        font-size: 13px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .detail_detail_b {
+            width: 100%;
+            padding: 0.2rem 2%;
+        }
+    }
+}
