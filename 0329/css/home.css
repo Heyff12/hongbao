@@ -1351,8 +1351,8 @@ section.tips p i.i_sad {
 
 .qiang_page .chai span.img_button.dong {
   display: block;
-  -webkit-animation: fanzhuan 1.6s ease infinite normal;
-  animation: fanzhuan 1.6s ease infinite normal;
+  -webkit-animation: fanzhuan 2s ease infinite normal;
+  animation: fanzhuan 2s ease infinite normal;
 }
 
 .qiang_page .chai a.scan {
