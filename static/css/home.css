@@ -909,6 +909,91 @@ section.tips p i.i_sad {
   border-bottom: 0;
 }
 
+.zhong_name_list {
+  width: 100%;
+  padding: 0;
+}
+
+.zhong_name_list ul {
+  width: 100%;
+  line-height: 1.093333rem;
+  border-radius: 0.133333rem;
+  font-size: 0.373333rem;
+  border-top: 0.026667rem solid #e5e5e5;
+}
+
+.zhong_name_list ul li {
+  border-bottom: 0.026667rem solid #e5e5e5;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 0.533333rem;
+}
+
+.zhong_name_list ul li span {
+  display: inline-block;
+}
+
+.zhong_name_list ul li span.img {
+  width: 0.586667rem;
+  height: 0.586667rem;
+  border-radius: 100%;
+  overflow: hidden;
+  text-align: center;
+  line-height: 0.586667rem;
+  margin-right: 0.266667rem;
+  vertical-align: middle;
+}
+
+.zhong_name_list ul li span.img img {
+  width: 100%;
+  height: auto;
+}
+
+.zhong_name_list ul li span.name {
+  width: 2.133333rem;
+  text-align: left;
+}
+
+.zhong_name_list ul li span.tel {
+  width: 3.2rem;
+  text-align: center;
+}
+
+.zhong_name_list ul li span.fr {
+  text-align: right;
+}
+
+.zhong_name_list ul li:after {
+  content: '';
+  clear: both;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+}
+
+.zhong_name_list ul li:nth-child(1) span.img,
+.zhong_name_list ul li:nth-child(2) span.img,
+.zhong_name_list ul li:nth-child(3) span.img {
+  top: 0.053333rem;
+  height: 1.013333rem;
+}
+
+.zhong_name_list.hei_fix {
+  max-height: 10.96rem;
+  overflow-y: auto;
+}
+
+.zhong_name_list.sigle ul {
+  border: 0;
+  margin-top: 0.533333rem;
+}
+
+.zhong_name_list.sigle ul li {
+  border-top: 0.026667rem solid #e5e5e5;
+  border-bottom: 0;
+}
+
 .hisroryD {
   width: 100%;
   padding: 0 0 0.266667rem;
@@ -1342,6 +1427,8 @@ section.tips p i.i_sad {
   display: none;
   box-shadow: none;
   position: relative;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
 .qiang_page .chai span.img_button img {
@@ -1351,8 +1438,6 @@ section.tips p i.i_sad {
 
 .qiang_page .chai span.img_button.dong {
   display: block;
-  -webkit-animation: fanzhuan 1.6s ease infinite normal;
-  animation: fanzhuan 1.6s ease infinite normal;
 }
 
 .qiang_page .chai a.scan {
@@ -1366,11 +1451,6 @@ section.tips p i.i_sad {
 }
 
 @-webkit-keyframes fanzhuan {
-  0% {
-    -webkit-transform: rotate3d(0, 1, 0, 0deg);
-    transform: rotate3d(0, 1, 0, 0deg);
-  }
-
   100% {
     -webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
@@ -1378,11 +1458,6 @@ section.tips p i.i_sad {
 }
 
 @keyframes fanzhuan {
-  0% {
-    -webkit-transform: rotate3d(0, 1, 0, 0deg);
-    transform: rotate3d(0, 1, 0, 0deg);
-  }
-
   100% {
     -webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
