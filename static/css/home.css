@@ -778,6 +778,7 @@ section.tips.nothing {
 
 section.tips p {
   text-align: center;
+  height: 0.64rem;
 }
 
 section.tips p i {
