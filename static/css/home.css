@@ -981,7 +981,7 @@ section.tips p i.i_sad {
 }
 
 .zhong_name_list.hei_fix {
-  max-height: 10.96rem;
+  max-height: 10.666667rem;
   overflow-y: auto;
 }
 
@@ -1134,6 +1134,10 @@ section.tips p i.i_sad {
   overflow: hidden;
 }
 
+.index_page section.body_pic .zhong_name .zhong_namein ul li {
+  padding: 0 0;
+}
+
 .index_page section.body_pic .zhong_name .zhong_namein ul li span {
   display: inline-block;
 }
@@ -1154,8 +1158,15 @@ section.tips p i.i_sad {
   height: auto;
 }
 
+.index_page section.body_pic .zhong_name .zhong_namein ul li span.name {
+  width: 1.866667rem;
+  text-align: left;
+}
+
 .index_page section.body_pic .zhong_name .zhong_namein ul li span.tel {
-  margin-left: 1.333333rem;
+  width: 2.666667rem;
+  text-align: center;
+  margin: 0;
 }
 
 .index_page section.body_pic .zhong_name .zhong_namein ul li:after {
@@ -1304,6 +1315,20 @@ section.tips p i.i_sad {
 }
 
 /* ==================疯抢红包============================================================ */
+
+body.qiang_bottom {
+  padding-bottom: 2.933333rem;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.qiang_page .qiang_b {
+  width: 100%;
+  position: fixed;
+  height: 2.933333rem;
+  bottom: 0;
+  background: white;
+}
 
 .qiang_page a.scan {
   width: 100%;

@@ -209,7 +209,7 @@ section.tips {
         }
     }
     &.hei_fix {
-        max-height: 411px;
+        max-height: 400px;
         overflow-y: auto;
     }
     &.sigle {
@@ -351,6 +351,7 @@ section.tips {
                 overflow: hidden;
                 ul {
                     li {
+                        padding: 0 0;
                         span {
                             display: inline-block;
                             &.img {
@@ -367,8 +368,14 @@ section.tips {
                                     height: auto;
                                 }
                             }
+                            &.name {
+                                width: 70px;
+                                text-align: left;
+                            }
                             &.tel {
-                                margin-left: 50px;
+                                width: 100px;
+                                text-align: center;
+                                margin: 0;
                             }
                         }
                         &:after {
@@ -489,8 +496,18 @@ section.tips {
 
 
 /* ==================疯抢红包============================================================ */
-
+body.qiang_bottom{
+    padding-bottom: 110px;
+    box-sizing: border-box;
+}
 .qiang_page {
+    .qiang_b{
+        width: 100%;
+        position: fixed;
+        height: 110px;
+        bottom: 0;
+        background: white;
+    }
     a.scan {
         width: 100%;
         text-align: center;

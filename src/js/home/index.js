@@ -43,12 +43,12 @@ require(['../require-config'], function() {
                     }
                 }
                 var MyMar_ul = setInterval(Marquee_ul, speed)
-                ul.onmouseover = function() {
-                    clearInterval(MyMar_ul)
-                }
-                ul.onmouseout = function() {
-                    MyMar_ul = setInterval(Marquee_ul, speed)
-                }
+                // ul.onmouseover = function() {
+                //     clearInterval(MyMar_ul)
+                // }
+                // ul.onmouseout = function() {
+                //     MyMar_ul = setInterval(Marquee_ul, speed)
+                // }
             });
         })
     })
