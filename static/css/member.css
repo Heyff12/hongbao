@@ -780,6 +780,25 @@ section.tips.nothing {
   z-index: 0;
 }
 
+i {
+  position: relative;
+  top: 0.133333rem;
+  margin-right: 0.133333rem;
+  width: 0.533333rem;
+  height: 0.533333rem;
+  display: inline-block;
+}
+
+i.i_smile {
+  background: url('../img/smile.png') center left no-repeat;
+  background-size: 0.533333rem auto;
+}
+
+i.i_sad {
+  background: url('../img/sad.png') center left no-repeat;
+  background-size: 0.533333rem auto;
+}
+
 .hisroryD {
   width: 100%;
   padding: 0 0 0.266667rem;

@@ -22,6 +22,23 @@ section.tips {
     }
 }
 
+i {
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    &.i_smile {
+        background: url('@{images}/smile.png') center left no-repeat;
+        background-size: 20px auto;
+    }
+    &.i_sad {
+        background: url('@{images}/sad.png') center left no-repeat;
+        background-size: 20px auto;
+    }
+}
+
 .hisroryD {
     width: 100%;
     padding: 0 0 10px;
@@ -257,7 +274,7 @@ p.title {
                             margin-right: 0;
                         }
                     }
-                    &:after{
+                    &:after {
                         content: '';
                         clear: both;
                     }
