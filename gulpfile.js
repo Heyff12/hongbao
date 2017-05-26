@@ -274,7 +274,7 @@ gulp.task('init', function() {
 //初始化静态资源
 gulp.task('static', function(done) {
     runSequence(
-        ['images', 'css'], ['js', 'reqconjs', 'jsnum'], ['html'],
+        ['images', 'css', 'js_local_es6', 'jsLocal_es6_no'],
         done);
 });
 // 默认任务 清空图片、样式、js并重建 运行语句 gulp

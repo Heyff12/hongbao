@@ -27,11 +27,7 @@ require(['../require-config'], function() {
             $(document).ready(function() {
                 // 倒计时执行
                 GetRTime();
-                //到底部
-                $('.js_down').on('click', function() {
-
-                    })
-                    //名单滚动
+                //名单滚动
                 var speed = 50
                 ul2.innerHTML = ul1.innerHTML
 
@@ -49,6 +45,16 @@ require(['../require-config'], function() {
                 // ul.onmouseout = function() {
                 //     MyMar_ul = setInterval(Marquee_ul, speed)
                 // }
+                ul_share2.innerHTML = ul_share1.innerHTML
+
+                function Marquee_share_ul() {
+                    if (ul_share2.offsetTop - ul_share.scrollTop <= 0)
+                        ul_share.scrollTop -= ul1.offsetHeight
+                    else {
+                        ul_share.scrollTop++
+                    }
+                }
+                var MyMar_share_ul = setInterval(Marquee_share_ul, speed)
             });
         })
     })
