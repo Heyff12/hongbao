@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../static/css/home.css">
 </head>
 
-<body>
+<body class="no_padding">
     <div id="wap" class="index_page">
         <section class="body_pic">
             <ul class="head_menu">
@@ -38,7 +38,7 @@
                 <span class="timebg" id="hour">0</span>时<span class="timebg" id="minite">0</span>分<span class="timebg" id="seconds">0</span>
             </div>
             <a class="down"></a>
-            <p class="pic_button">
+            <p class="pic_button js_qiang_button">
                 <a href="#"></a>
             </p>
             <p class="title red"><span class="word">红包获得记录</span><span class="line"></span></p>
@@ -66,7 +66,7 @@
                     </div>
                 </div>                
             </div>
-            <a class="scan_all" href="#">查看抢红包排名 <img src="../static/img/icon_arrow.png"></a>
+            <a class="scan_all" href="#"><!-- 查看抢红包排名 --> <img src="../static/img/title11.png"></a>
             <p class="title red"><span class="word">分享奖励记录</span><span class="line"></span></p>
             <div class="zhong_name">
                 <div class="zhong_namein_out">
@@ -92,9 +92,24 @@
                     </div>
                 </div>                
             </div>
-            <a class="scan_all" href="#">查看获得分享奖励排名 <img src="../static/img/icon_arrow.png"></a>
+            <a class="scan_all" href="#"><!-- 查看获得分享奖励排名 --> <img src="../static/img/title12.png"></a>
             <div class="head_footer"></div>
         </section>
+        <!-- 有红包可以抢start -->
+        <div class="chai js_chai">
+            <span class="close js_close"><img src="../static/img/close.png"></span>
+            <dl>
+                <dt><img src="http://img3.imgtn.bdimg.com/it/u=3749875149,3961380760&fm=23&gp=0.jpg"></dt>
+                <dd class="name">春暖花开</dd>
+                <dd class="word">发了一个红包，金额随机</dd>
+                <dd class="merry">恭喜发财，大吉大利</dd>
+            </dl>
+            <span class="chai_button js_chai_button"><img src="../static/img/kai.png"></span>
+            <span class="img_button js_img_button"><img src="../static/img/kai.png"></span>
+            <img class="botom" src="../static/img/flower.png"/>
+        </div>
+        <!-- 有红包可以抢end -->
+        <div class="zheceng"></div>
     </div>
     <script src="../static/js/require.2.1.11.min.js " type="text/javascript " data-main="../static/js/home/index.js" defer async="true "></script>
 </body>

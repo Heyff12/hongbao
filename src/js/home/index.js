@@ -5,6 +5,7 @@ require(['../require-config'], function() {
             var start_time = "2017-03-18 14:10:30".replace(/-/g, '/'); //活动开始时间,更改样式，保证ie及相关浏览器兼容时间格式
             var date = new Date(start_time);
             var timer_rt = null;
+
             function GetRTime() {
                 var t = date - new Date();
                 var nD = parseInt(t / (1000 * 60 * 60 * 24));
@@ -39,12 +40,12 @@ require(['../require-config'], function() {
                     }
                 }
                 var MyMar_ul = setInterval(Marquee_ul, speed)
-                // ul.onmouseover = function() {
-                //     clearInterval(MyMar_ul)
-                // }
-                // ul.onmouseout = function() {
-                //     MyMar_ul = setInterval(Marquee_ul, speed)
-                // }
+                    // ul.onmouseover = function() {
+                    //     clearInterval(MyMar_ul)
+                    // }
+                    // ul.onmouseout = function() {
+                    //     MyMar_ul = setInterval(Marquee_ul, speed)
+                    // }
                 ul_share2.innerHTML = ul_share1.innerHTML
 
                 function Marquee_share_ul() {
@@ -54,7 +55,28 @@ require(['../require-config'], function() {
                         ul_share.scrollTop++
                     }
                 }
-                var MyMar_share_ul = setInterval(Marquee_share_ul, speed)
+                var MyMar_share_ul = setInterval(Marquee_share_ul, speed);
+
+
+                //点击开抢按钮
+                $('.js_qiang_button').on('click', function() {
+                    $('.zheceng').show();
+                    //出现可以抢的
+                    $('.js_chai').show();
+                    //出现不可以抢的
+                    //$('.js_chai_no').show();
+                });
+                //点击拆--动画
+                $('.js_chai_button').on('click', function() {
+                    $(this).addClass('dong');
+                });
+                //关闭弹框和这层--并移除动画效果
+                $('.js_close').on('click', function() {
+                    $('.zheceng').hide();
+                    $('.js_chai').hide();
+                    $('.js_chai_no').hide();
+                    $('.js_chai_button').removeClass('dong');
+                })
             });
         })
     })
