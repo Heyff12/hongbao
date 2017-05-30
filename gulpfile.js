@@ -296,6 +296,11 @@ gulp.task('dev', function(done) {
         ['images', 'css', 'js_local_es6', 'jsLocal_es6_no'], ['watch'],
         done);
 });
+gulp.task('local', function(done) {
+    runSequence(
+        ['css', 'js_local_es6', 'jsLocal_es6_no'], ['watch'],
+        done);
+});
 gulp.task('default', ['dev']);
 
 //删除不可用
