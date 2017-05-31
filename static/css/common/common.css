@@ -288,7 +288,7 @@ header {
   background: #f20000;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0.133333rem 0.4rem 0;
+  padding: 0.133333rem 0 0;
   line-height: 1.333333rem;
   height: 1.333333rem;
   font-size: 0.48rem;
@@ -310,6 +310,12 @@ header h2 {
   margin-left: 20%;
   text-align: center;
   font-weight: normal;
+}
+
+header h2 img {
+  vertical-align: middle;
+  width: auto;
+  height: 0.693333rem;
 }
 
 header a.title_a {

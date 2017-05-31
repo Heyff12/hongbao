@@ -542,11 +542,22 @@ section.new_body {
                     color: white;
                     font-size: 16px;
                     text-align: center;
-                    background: @new_head_red;
+                    //background: @new_head_red;
+                    background: -webkit-linear-gradient(left,#eb432a,#de2216); /* Safari 5.1 - 6 */
+                    background: -o-linear-gradient(left,#eb432a,#de2216); /* Opera 11.1 - 12*/
+                    background: -moz-linear-gradient(left,#eb432a,#de2216); /* Firefox 3.6 - 15*/
+                    background: linear-gradient(left,#eb432a,#de2216); /* 标准的语法 */
                     box-shadow: 0 1px 3px @new_head_red;
                     border-radius: 5px;
                     &:nth-child(2) {
                         margin: 0 5%;
+                    }
+                    img{
+                        vertical-align: middle;
+                        width: auto;
+                        height: 16px;
+                        position: relative;
+                        top: -2px;
                     }
                 }
             }
@@ -591,8 +602,8 @@ section.new_body {
                                 text-align: left;
                             }
                             &.fr {
-                                width: 140px;
-                                clear: both;
+                                width: 130px;
+                                clear: right;
                                 text-align: right;
                                 i {
                                     font-style: normal;
@@ -847,14 +858,14 @@ section.new_body {
                 }
                 .crash_list {
                     width: 100%;
-                    padding: 0 15px;
+                    padding: 0 10px;
                     box-sizing: border-box;
                     margin: 20px auto 0;
                     ul {
                         width: 100%;
                         border: 2px solid @red;
                         border-radius: 6px;
-                        padding: 5px 20px;
+                        padding: 5px 10px;
                         box-sizing: border-box;
                         line-height: 46px;
                         color: @new_head_red;
@@ -862,6 +873,7 @@ section.new_body {
                         li {
                             width: 100%;
                             border-bottom: 1px solid @border_color;
+                            position: relative;
                             span {
                                 display: inline-block;
                                 &.tel {
@@ -871,6 +883,7 @@ section.new_body {
                                     width: 50px;
                                 }
                                 &.fr {
+                                    clear:right;
                                     i {
                                         font-style: normal;
                                         font-weight: bold;
@@ -878,6 +891,18 @@ section.new_body {
                                     }
                                 }
                             }
+                            // &:after {
+                            //     content: '';
+                            //     width: 100%;
+                            //     clear: both;
+                            //     height: 0;
+                            //     background:red;
+                            //     line-height: 0px;
+                            //     font-size: 0px;
+                            //     position: absolute;
+                            //     left: 0;
+                            //     bottom: 0;
+                            // }
                         }
                     }
                 }
@@ -986,7 +1011,11 @@ section.new_body {
                 box-sizing: border-box;
                 a.title_bg {
                     width: 100%;
-                    background: @new_head_red;
+                    //background: @new_head_red;
+                    background: -webkit-linear-gradient(left,#eb432a,#de2216); /* Safari 5.1 - 6 */
+                    background: -o-linear-gradient(left,#eb432a,#de2216); /* Opera 11.1 - 12*/
+                    background: -moz-linear-gradient(left,#eb432a,#de2216); /* Firefox 3.6 - 15*/
+                    background: linear-gradient(left,#eb432a,#de2216); /* 标准的语法 */
                     box-shadow: 0 1px 3px @new_head_red;
                     border-radius: 5px;
                     height: 40px;
@@ -997,11 +1026,21 @@ section.new_body {
                     letter-spacing: 5px;
                     margin: 16px auto;
                     display: block;
+                    img{
+                        vertical-align: middle;
+                        width: auto;
+                        height: 26px;
+                        position: relative;
+                        top:-2px;
+                    }
                     &.small {
                         width: 70%;
                         height: 32px;
                         font-size: 16px;
                         line-height: 32px;
+                        img{
+                            top: -1px;
+                        }
                     }
                 }
                 p.line {

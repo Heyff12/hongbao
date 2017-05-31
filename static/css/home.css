@@ -288,7 +288,7 @@ header {
   background: #f20000;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0.133333rem 0.4rem 0;
+  padding: 0.133333rem 0 0;
   line-height: 1.333333rem;
   height: 1.333333rem;
   font-size: 0.48rem;
@@ -310,6 +310,12 @@ header h2 {
   margin-left: 20%;
   text-align: center;
   font-weight: normal;
+}
+
+header h2 img {
+  vertical-align: middle;
+  width: auto;
+  height: 0.693333rem;
 }
 
 header a.title_a {
@@ -1401,13 +1407,26 @@ section.new_body .new_body_in .new_body_inin ul.qiehuan_menu li {
   color: white;
   font-size: 0.426667rem;
   text-align: center;
-  background: #f20000;
+  background: -webkit-linear-gradient(left, #eb432a, #de2216);
+  /* Safari 5.1 - 6 */
+  /* Opera 11.1 - 12*/
+  /* Firefox 3.6 - 15*/
+  background: linear-gradient(left, #eb432a, #de2216);
+  /* 标准的语法 */
   box-shadow: 0 0.026667rem 0.08rem #f20000;
   border-radius: 0.133333rem;
 }
 
 section.new_body .new_body_in .new_body_inin ul.qiehuan_menu li:nth-child(2) {
   margin: 0 5%;
+}
+
+section.new_body .new_body_in .new_body_inin ul.qiehuan_menu li img {
+  vertical-align: middle;
+  width: auto;
+  height: 0.426667rem;
+  position: relative;
+  top: -0.053333rem;
 }
 
 section.new_body .new_body_in .new_body_inin .zhong_name_list {
@@ -1465,8 +1484,8 @@ section.new_body .new_body_in .new_body_inin .zhong_name_list ul li span.tel {
 }
 
 section.new_body .new_body_in .new_body_inin .zhong_name_list ul li span.fr {
-  width: 3.733333rem;
-  clear: both;
+  width: 3.466667rem;
+  clear: right;
   text-align: right;
 }
 
@@ -1754,7 +1773,7 @@ section.new_body .new_body_in .new_body_inin.crash .kong {
 
 section.new_body .new_body_in .new_body_inin.crash .crash_list {
   width: 100%;
-  padding: 0 0.4rem;
+  padding: 0 0.266667rem;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0.533333rem auto 0;
@@ -1764,7 +1783,7 @@ section.new_body .new_body_in .new_body_inin.crash .crash_list ul {
   width: 100%;
   border: 0.053333rem solid #de2519;
   border-radius: 0.16rem;
-  padding: 0.133333rem 0.533333rem;
+  padding: 0.133333rem 0.266667rem;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   line-height: 1.226667rem;
@@ -1775,6 +1794,7 @@ section.new_body .new_body_in .new_body_inin.crash .crash_list ul {
 section.new_body .new_body_in .new_body_inin.crash .crash_list ul li {
   width: 100%;
   border-bottom: 0.026667rem solid #e5e5e5;
+  position: relative;
 }
 
 section.new_body .new_body_in .new_body_inin.crash .crash_list ul li span {
@@ -1787,6 +1807,10 @@ section.new_body .new_body_in .new_body_inin.crash .crash_list ul li span.tel {
 
 section.new_body .new_body_in .new_body_inin.crash .crash_list ul li span.name {
   width: 1.333333rem;
+}
+
+section.new_body .new_body_in .new_body_inin.crash .crash_list ul li span.fr {
+  clear: right;
 }
 
 section.new_body .new_body_in .new_body_inin.crash .crash_list ul li span.fr i {
@@ -1923,7 +1947,12 @@ section.new_body .new_body_in .new_body_inin .center_button {
 
 section.new_body .new_body_in .new_body_inin .center_button a.title_bg {
   width: 100%;
-  background: #f20000;
+  background: -webkit-linear-gradient(left, #eb432a, #de2216);
+  /* Safari 5.1 - 6 */
+  /* Opera 11.1 - 12*/
+  /* Firefox 3.6 - 15*/
+  background: linear-gradient(left, #eb432a, #de2216);
+  /* 标准的语法 */
   box-shadow: 0 0.026667rem 0.08rem #f20000;
   border-radius: 0.133333rem;
   height: 1.066667rem;
@@ -1936,11 +1965,23 @@ section.new_body .new_body_in .new_body_inin .center_button a.title_bg {
   display: block;
 }
 
+section.new_body .new_body_in .new_body_inin .center_button a.title_bg img {
+  vertical-align: middle;
+  width: auto;
+  height: 0.693333rem;
+  position: relative;
+  top: -0.053333rem;
+}
+
 section.new_body .new_body_in .new_body_inin .center_button a.title_bg.small {
   width: 70%;
   height: 0.853333rem;
   font-size: 0.426667rem;
   line-height: 0.853333rem;
+}
+
+section.new_body .new_body_in .new_body_inin .center_button a.title_bg.small img {
+  top: -0.026667rem;
 }
 
 section.new_body .new_body_in .new_body_inin .center_button p.line {
