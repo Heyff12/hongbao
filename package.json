@@ -4,7 +4,7 @@
   "description": "rechargeB详情",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "heyff",
   "license": "ISC",
@@ -44,10 +44,12 @@
     "gulp-util": "^3.0.7",
     "jshint": "^2.9.4",
     "jshint-stylish": "^2.2.1",
+    "mocha": "^3.4.2",
     "path": "^0.12.7",
     "postcss-px2rem": "^0.3.0",
     "requirejs": "^2.3.2",
     "run-sequence": "^1.2.2",
+    "should": "^11.2.1",
     "tiny-lr": "^1.0.3"
   }
 }

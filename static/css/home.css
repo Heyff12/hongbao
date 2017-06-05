@@ -1076,6 +1076,7 @@ input:-ms-input-placeholder {
   line-height: 0.533333rem;
   margin: 0.266667rem auto 0.426667rem;
   color: #fcead4;
+  background: none;
 }
 
 .index_page section.body_pic p.title span {
@@ -1493,6 +1494,11 @@ section.new_body .new_body_in .new_body_inin ul.qiehuan_menu li {
   /* 标准的语法 */
   box-shadow: 0 0.026667rem 0.08rem #f20000;
   border-radius: 0.133333rem;
+}
+
+section.new_body .new_body_in .new_body_inin ul.qiehuan_menu li.tab {
+  background: #f1a31c;
+  box-shadow: 0 0.026667rem 0.08rem #f1a31c;
 }
 
 section.new_body .new_body_in .new_body_inin ul.qiehuan_menu li:nth-child(2) {

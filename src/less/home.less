@@ -274,6 +274,7 @@ input:-ms-input-placeholder {
             line-height: 20px;
             margin: 10px auto 16px;
             color: @word_white;
+            background: none;
             span {
                 display: inline-block;
                 &.line {
@@ -617,6 +618,10 @@ section.new_body {
                     background: linear-gradient(left,#eb432a,#de2216); /* 标准的语法 */
                     box-shadow: 0 1px 3px @new_head_red;
                     border-radius: 5px;
+                    &.tab{
+                        background: #f1a31c;
+                        box-shadow: 0 1px 3px #f1a31c;
+                    }
                     &:nth-child(2) {
                         margin: 0 5%;
                     }
