@@ -33,11 +33,20 @@ require(['../require-config'], function () {
                 //名单滚动
                 var speed = 50;
                 ul2.innerHTML = ul1.innerHTML;
+                var end_top = ul1.offsetHeight * 2 - ul.offsetHeight;
 
                 function Marquee_ul() {
-                    if (ul2.offsetTop - ul.scrollTop <= 0) ul.scrollTop -= ul1.offsetHeight;else {
+                    // if (ul2.offsetTop - ul.scrollTop <= 0)
+                    //     ul.scrollTop -= ul1.offsetHeight
+                    // else {
+                    //     ul.scrollTop++
+                    // }
+                    if (ul.scrollTop > end_top) ul.scrollTop -= ul1.offsetHeight;else {
                         ul.scrollTop++;
                     }
+                    // console.log('ul2.offsetTop_'+ul2.offsetTop);
+                    // console.log('ul.scrollTop_'+ul.scrollTop);
+                    //console.log(ul.scrollTop);
                 }
                 var MyMar_ul = setInterval(Marquee_ul, speed);
                 // ul.onmouseover = function() {
@@ -47,9 +56,15 @@ require(['../require-config'], function () {
                 //     MyMar_ul = setInterval(Marquee_ul, speed)
                 // }
                 ul_share2.innerHTML = ul_share1.innerHTML;
+                var end_share_top = ul_share1.offsetHeight * 2 - ul_share.offsetHeight;
 
                 function Marquee_share_ul() {
-                    if (ul_share2.offsetTop - ul_share.scrollTop <= 0) ul_share.scrollTop -= ul1.offsetHeight;else {
+                    // if (ul_share2.offsetTop - ul_share.scrollTop <= 0)
+                    //     ul_share.scrollTop -= ul1.offsetHeight
+                    // else {
+                    //     ul_share.scrollTop++
+                    // }
+                    if (ul_share.scrollTop > end_share_top) ul_share.scrollTop -= ul_share1.offsetHeight;else {
                         ul_share.scrollTop++;
                     }
                 }
