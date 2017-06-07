@@ -324,6 +324,7 @@ header a.title_a {
   color: white;
   width: 2rem;
   height: 1.333333rem;
+  line-height: 1.333333rem;
   cursor: pointer;
   top: 0.133333rem;
 }
@@ -344,10 +345,30 @@ header a.title_a.a_left.back {
 }
 
 header a.title_a.a_right {
-  right: 0.2rem;
-  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsKQGZvbnQtZmFjZSB7IGZvbnQtZmFtaWx5OiBpZm9udDsgc3JjOiB1cmwoaHR0cDovL2F0LmFsaWNkbi5jb20vdC9mb250XzE0NDIzNzM4OTZfNDc1NDQ1NS5lb3Q/I2llZml4KSBmb3JtYXQoZW1iZWRkZWQtb3BlbnR5cGUpLCB1cmwoaHR0cDovL2F0LmFsaWNkbi5jb20vdC9mb250XzE0NDIzNzM4OTZfNDc1NDQ1NS53b2ZmKSBmb3JtYXQod29mZiksIHVybChodHRwOi8vYXQuYWxpY2RuLmNvbS90L2ZvbnRfMTQ0MjM3Mzg5Nl80NzU0NDU1LnR0ZikgZm9ybWF0KHRydWV0eXBlKSwgdXJsKGh0dHA6Ly9hdC5hbGljZG4uY29tL3QvZm9udF8xNDQyMzczODk2XzQ3NTQ0NTUuc3ZnI2lmb250KSBmb3JtYXQoc3ZnKTsgfQoKXV0+PC9zdHlsZT48L2RlZnM+PGcgY2xhc3M9InRyYW5zZm9ybS1ncm91cCI+PGcgdHJhbnNmb3JtPSJzY2FsZSgwLjE5NTMxMjUsIDAuMTk1MzEyNSkiPjxwYXRoIGQ9Ik01MTAuOTc1NjcgMjYuNTc0MjM5YzE0Ni44OTE1MTIgMCAyNjUuOTkzMDk3IDExOS4xMDI2MDggMjY1Ljk5MzA5NyAyNjUuOTkzMDk3UzY1Ny44NjYxNTkgNTU4LjU2MDQzMiA1MTAuOTc1NjcgNTU4LjU2MDQzMmMtMTQ2Ljg5MDQ4OCAwLTI2NS45OTMwOTctMTE5LjEwMjYwOC0yNjUuOTkzMDk3LTI2NS45OTMwOTdTMzY0LjA4NTE4MiAyNi41NzQyMzkgNTEwLjk3NTY3IDI2LjU3NDIzOUw1MTAuOTc1NjcgMjYuNTc0MjM5ek02Ny42ODk2NTggOTk0LjU2MTUyN2MwLTE2NS4yOTQ2NSAxMDAuNDk3ODc4LTMwNy45NzExNjQgMjQ2LjMwNzc1NS0zNzYuOTIyNTU5IDQ4LjY0OSA1NC4xMDAxNTIgMTE4LjQ4NzYwMSA4OC43MTI0NjEgMTk2Ljk3NzIzMyA4OC43MTI0NjEgNzguNDkyNzAyIDAgMTQ4LjMzMTMwMy0zNC42Nzk4NDcgMTk3LjA0Nzg0Mi04OC43MTI0NjEgMTQ1LjgwODg1NCA2OC45NTI0MTggMjQ2LjIzOTE5NCAyMTEuNjI3OTA4IDI0Ni4yMzkxOTQgMzc2LjkyMjU1OUw2Ny42ODk2NTggOTk0LjU2MTUyNyA2Ny42ODk2NTggOTk0LjU2MTUyN3oiIGZpbGw9IiNmZmZmZmYiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==') center right no-repeat;
-  background-size: 0.5rem auto;
-  padding-right: 0.4rem;
+  right: 0.533333rem;
+  padding-right: 0;
+  font-size: 0.373333rem;
+  text-align: right;
+}
+
+header a.title_a.a_right i.back {
+  background: url('../img/icon_back.png') center left no-repeat;
+  background-size: 0.213333rem auto;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  display: inline-block;
+  width: 0.32rem;
+  height: 0.8rem;
+  position: relative;
+  right: 0;
+  top: 0.266667rem;
+}
+
+header a.title_a.a_right.back {
+  background: url('../img/icon_back.png') center right no-repeat;
+  background-size: 0.213333rem auto;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 header a.title_a.a_right.rule {
@@ -793,11 +814,11 @@ body.no_padding {
   width: 100%;
   border-radius: 0.133333rem;
   font-size: 0.373333rem;
-  border-top: 0.026667rem solid #f2dfc8;
+  border-top: 1px solid #f2dfc8;
 }
 
 .zhong_name ul li {
-  border-bottom: 0.026667rem solid #f2dfc8;
+  border-bottom: 1px solid #f2dfc8;
   width: 100%;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -857,7 +878,7 @@ body.no_padding {
 }
 
 .zhong_name.sigle ul li {
-  border-top: 0.026667rem solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
   border-bottom: 0;
 }
 
@@ -905,7 +926,7 @@ body.no_padding {
   width: 100%;
   height: 0.933333rem;
   line-height: 0.933333rem;
-  border: 0.026667rem solid #e5e5e5;
+  border: 1px solid #e5e5e5;
   padding: 0 0.133333rem;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1528,7 +1549,7 @@ section.new_body .new_body_in .new_body_inin .zhong_name_list ul {
 }
 
 section.new_body .new_body_in .new_body_inin .zhong_name_list ul li {
-  border-bottom: 0.026667rem solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   width: 100%;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1604,7 +1625,7 @@ section.new_body .new_body_in .new_body_inin .zhong_name_list.sigle ul {
 }
 
 section.new_body .new_body_in .new_body_inin .zhong_name_list.sigle ul li {
-  border-top: 0.026667rem solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
   border-bottom: 0;
 }
 
@@ -1667,7 +1688,7 @@ section.new_body .new_body_in .new_body_inin .list_detail ul.list li {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 0.053333rem;
-  border-bottom: 0.026667rem solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 section.new_body .new_body_in .new_body_inin .list_detail ul.list li dl {
@@ -1781,7 +1802,7 @@ section.new_body .new_body_in .new_body_inin.center dl.title dt {
 }
 
 section.new_body .new_body_in .new_body_inin.center dl.title dd {
-  border-bottom: 0.026667rem solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   padding-bottom: 0.4rem;
 }
 
@@ -1805,7 +1826,7 @@ section.new_body .new_body_in .new_body_inin.center ul.money li {
 }
 
 section.new_body .new_body_in .new_body_inin.center ul.money li:nth-child(1) {
-  border-right: 0.026667rem solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
 }
 
 section.new_body .new_body_in .new_body_inin.center ul.money li a {
@@ -1878,7 +1899,7 @@ section.new_body .new_body_in .new_body_inin.crash .crash_list ul {
 
 section.new_body .new_body_in .new_body_inin.crash .crash_list ul li {
   width: 100%;
-  border-bottom: 0.026667rem solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   position: relative;
 }
 
@@ -1913,7 +1934,7 @@ section.new_body .new_body_in .new_body_inin.crash p.money_left {
 }
 
 section.new_body .new_body_in .new_body_inin.crash p.line {
-  border-bottom: 0.026667rem solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   height: 0.026667rem;
   width: 80%;
   margin: 0.186667rem auto;
@@ -1964,7 +1985,7 @@ section.new_body .new_body_in .new_body_inin.crash .bank ul.detail li dl dd inpu
   width: 100%;
   height: 0.933333rem;
   line-height: 0.933333rem;
-  border: 0.026667rem solid #e5e5e5;
+  border: 1px solid #e5e5e5;
   padding: 0 0.133333rem;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2003,7 +2024,7 @@ section.new_body .new_body_in .new_body_inin.crash .crash_get_list ul {
 
 section.new_body .new_body_in .new_body_inin.crash .crash_get_list ul li {
   width: 100%;
-  border-bottom: 0.026667rem solid #f3efef;
+  border-bottom: 1px solid #f3efef;
 }
 
 section.new_body .new_body_in .new_body_inin.crash .crash_get_list ul li span {
@@ -2080,7 +2101,7 @@ section.new_body .new_body_in .new_body_inin .center_button a.title_bg.small img
 section.new_body .new_body_in .new_body_inin .center_button p.line {
   height: 0.026667rem;
   width: 100%;
-  border-bottom: 0.026667rem solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 section.new_body .new_body_in .new_body_inin.shop_list form {
@@ -2447,8 +2468,8 @@ section.container_orderlist {
 
 section.container_orderlist .order_list_d {
   width: 100%;
-  border-top: 0.026667rem solid #e5e5e5;
-  border-bottom: 0.026667rem solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   background-color: white;
   font-size: 0.373333rem;
   margin: 0.266667rem auto;
@@ -2530,7 +2551,7 @@ section.container_orderlist .order_list_d dl span.del_order.none {
 }
 
 .hisroryD ul li {
-  border-top: 0.026667rem solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
   width: 100%;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2665,8 +2686,8 @@ section.container_detail ul.detail_ul {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0.16rem auto 0.4rem;
-  border-top: 0.026667rem solid #d7d7d7;
-  border-bottom: 0.026667rem solid #d7d7d7;
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
   line-height: 0.8rem;
   font-size: 0.373333rem;
 }
@@ -2709,8 +2730,8 @@ p.title {
 }
 
 .bank_addr {
-  border-top: 0.026667rem solid #e5e5e5;
-  border-bottom: 0.026667rem solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   width: 100%;
   margin-bottom: 1.2rem;
 }
@@ -2754,7 +2775,7 @@ p.title {
   width: 100%;
   height: 0.933333rem;
   line-height: 0.933333rem;
-  border: 0.026667rem solid #e5e5e5;
+  border: 1px solid #e5e5e5;
   padding: 0 0.133333rem;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2767,7 +2788,7 @@ p.title {
   height: 0.933333rem;
   line-height: 0.933333rem;
   margin-right: 2%;
-  border: 0.026667rem solid #e5e5e5;
+  border: 1px solid #e5e5e5;
   padding: 0 0.133333rem;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
