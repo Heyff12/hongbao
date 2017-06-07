@@ -47,6 +47,7 @@ var file_road = {
     htmlSrc: './html/**/*.html',
     // htmlDst_mid: './static_dest/template', //测试
     // htmlDst: '../bin/template',
+    htmlSrc_test:'./svg/**/*.html',//测试文件——仅供html实时更新
 
     w_cssSrc: 'src/less/**/*.less',
     w_imgSrc: 'src/img/**/*',
@@ -212,6 +213,11 @@ gulp.task('html_fresh', function() {
     gulp.src(file_road.htmlSrc)
         .pipe(browserSync.stream())
 });
+//测试文件html监听
+gulp.task('test_html_fresh', function() {
+    gulp.src(file_road.htmlSrc_test)
+        .pipe(browserSync.stream())
+});
 // 监听任务 运行语句 gulp watch------------------------------------------------------------------------------------------------------------------------------------------
 gulp.task('watch', function() {
     //livereload启用
@@ -235,6 +241,7 @@ gulp.task('watch', function() {
     gulp.watch(file_road.w_jsLocalSrc_es6_no, ['jsLocal_es6_no']);
     // 监听html变动
     gulp.watch(file_road.w_htmlSrc, ['html_fresh']);
+    gulp.watch(file_road.test_html_fresh,['test_html_fresh']);
     // gulp.watch(file_road.w_jsSrc, ['js']);
     // gulp.watch(file_road.w_jsrecon_Src, ['reqconjs']);
     // gulp.watch(file_road.w_jsnum_Src, ['jsnum']);
