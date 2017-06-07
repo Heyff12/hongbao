@@ -1,4 +1,5 @@
 require(['../require-config'], function() {
+    //var $ = require('zepto');
     require(["zepto"], function($) {
         $(function() {
             //倒计时
@@ -91,8 +92,8 @@ require(['../require-config'], function() {
                     $('.js_chai').hide();
                     $('.js_chai_no').hide();
                     $('.js_chai_button').removeClass('dong');
-                })
+                });
             });
-        })
-    })
+        });
+    });
 })

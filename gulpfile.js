@@ -12,6 +12,7 @@ var gulp = require('gulp'), //基础库
     postcss = require('gulp-postcss'), //单位转化px--rem
     px2rem = require('postcss-px2rem'), //单位转化px--rem
     jshint = require('gulp-jshint'), //js检查
+    jscs=require('gulp-jscs'),
     stylish = require('jshint-stylish'),
     uglify = require('gulp-uglify'), //js压缩
     rename = require('gulp-rename'), //重命名
@@ -108,7 +109,7 @@ gulp.task('css', function() {
 //语法检查------------------------------------------------------------------------------------------------------------------------------------------
 gulp.task('jshint', function() {
     return gulp.src(file_road.jsLocal)
-        .pipe(jscs()) //检测JS风格
+        //.pipe(jscs()) //检测JS风格
         .pipe(jshint({
             "undef": false,
             "unused": false
@@ -306,6 +307,11 @@ gulp.task('dev', function(done) {
 gulp.task('local', function(done) {
     runSequence(
         ['css', 'js_local_es6', 'jsLocal_es6_no'], ['watch'],
+        done);
+});
+gulp.task('dev_test', function(done) {
+    runSequence(
+        ['images', 'css', 'js_local_es6', 'jsLocal_es6_no'], ['jshint'], ['watch'],
         done);
 });
 gulp.task('default', ['dev']);

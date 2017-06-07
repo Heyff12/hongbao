@@ -1,6 +1,7 @@
 "use strict";
 
 require(['../require-config'], function () {
+    //var $ = require('zepto');
     require(["zepto"], function ($) {
         $(function () {
             //倒计时
